@@ -9,7 +9,7 @@ backcall==0.2.0
 beautifulsoup4==4.11.1
 bleach==5.0.0
 blinker==1.4
-btrfsutil==5.17
+# btrfsutil==5.17
 CacheControl==0.12.6
 cachetools==5.2.0
 certifi==2021.10.8
