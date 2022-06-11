@@ -1,7 +1,5 @@
 import pytube as pt
 import streamlit as st
-from PIL import Image
-import urllib.request
 import platform
 import os
 
