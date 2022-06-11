@@ -45,7 +45,7 @@ jupyter-client==7.3.4
 jupyter-core==4.10.0
 jupyterlab-pygments==0.2.2
 jupyterlab-widgets==1.1.0
-layoutswitcherlib==0.8.27
+# layoutswitcherlib==0.8.27
 libtorrent==2.0.6
 lit==13.0.1.dev0
 manjaro-sdk==0.1
