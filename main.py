@@ -2,6 +2,8 @@ import pytube as pt
 import streamlit as st
 import platform
 import os
+from PIL import Image
+import base64
 
 def download(yt,n,streams):
     video=streams.get_by_itag(n)
@@ -16,6 +18,13 @@ def download(yt,n,streams):
 
 def main():
     st.markdown("<h1 style='text-align: center; color: red;'>Youtube video downloader</h1>", unsafe_allow_html=True)
+    file_ = open("./assets/download.gif", "rb")
+    contents = file_.read()
+    data_url = base64.b64encode(contents).decode("utf-8")
+    file_.close()
+
+    st.markdown(
+            f'<img src="data:image/gif;base64,{data_url}" alt="">',unsafe_allow_html=True,)
     url=st.text_input('Enter the link')
 
     if url=='':
